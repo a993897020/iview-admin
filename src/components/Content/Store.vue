@@ -122,6 +122,7 @@
 
 <script>
 	import AddStore from './AddStore.vue'
+	import Utils from '../../util.js'
 	import expandRow from './table/table-expand.vue'
 	  const Userlist=['U','luck','jack'];
 	const Colorlist=['#f56a00', '#7265e6', '#ffbf00'];
@@ -341,19 +342,32 @@ export default {
   },
 
   /* 传递数据!!!!!!!!!*/
-
-mounted(){
+mounted(){ 
+	 // Utils.$on('data',(test)=>{
+		//  console.log(test);
+		//  console.log(this.$route.query.nameId);
+		//  setTimeout(()=>{
+		// 	 this.getParams(test);
+		//  },1000)
+	 // })
 		this.getParams();
  },
 
 
 	methods:{
-		getParams(){
-			var routerParams=this.$route.query.nameId
-			console.log(routerParams)
-			this.data1.unshift(routerParams);
-			console.log(this.data1);
-		},
+		 getParams(){
+			 
+			 
+			 
+				//this.data1.push(test);
+					 var routerParams=this.$route.query.nameId
+					 console.log(routerParams)
+					 this.data1.unshift(routerParams);
+					 console.log(this.data1);
+		 		
+		 
+			
+		 },
 		/* 导航栏active */
 		linkto:function(name){
 			console.log(name)
@@ -401,7 +415,6 @@ mounted(){
  // 	 '$route':'getParams'
  //  }, 
 
-	
   }
 </script>
 

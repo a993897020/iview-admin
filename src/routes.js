@@ -14,7 +14,8 @@ import Star from './components/Content/Star.vue'
 import Edit from './components/Content/Edit.vue'
 import Setting from './components/Content/Setting.vue'
 import Explain from './components/Content/Explain.vue'
-export default[
+export default
+[
 	{path:'/login',component:Login},
 	{path:'/registe',component:Registe},
 	{path:'/index',component:Index},

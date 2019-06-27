@@ -170,7 +170,8 @@
 </template>
 
 <script>
-	import axios from 'axios'
+	import Store from './Store.vue'
+	import Utils from '../../util.js'
 	  const Userlist=['U','luck','jack'];
 	const Colorlist=['#f56a00', '#7265e6', '#ffbf00'];
 export default {
@@ -196,10 +197,10 @@ export default {
 					{required:true,message:'请输入联系电话',reigger:'blur'}
 				]
 			},
-			list:[	{label:'mjyh',value:'满减优惠'},
-					{label:'yhdcb',value:'优惠大酬宾'},
-					{label:'xyhlj',value:'新用户立减'},
-					{label:'jjlj',value:'进店领卷'}],
+			list:[	{value:'mjyh',label:'满减优惠'},
+					{value:'yhdcb',label:'优惠大酬宾'},
+					{value:'xyhlj',label:'新用户立减'},
+					{value:'jjlj',label:'进店领卷'}],
 			hang:[
 				{title:'活动标题',key:'title',align:'center'},
 				{title:'活动名称',key:'name',align:'center'},
@@ -356,6 +357,8 @@ export default {
 					nameId:this.all
 				}
 			});
+			//Utils.$emit('data',this.all);
+
 		},
 		
 	},

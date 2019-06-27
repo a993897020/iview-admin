@@ -20,9 +20,9 @@ Vue.use(VueQuillEditor)
 /* eslint-disable no-new */
 const router =new VueRouter({
 	routes:Routes,
-	mode:'history'
+	mode:'hash',
+	base:'/dist/',
 })
-
 new Vue({
   el: '#app',
   components: { App },
