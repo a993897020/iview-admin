@@ -351,6 +351,7 @@ mounted(){
 		//  },1000)
 	 // })
 		this.getParams();
+    	this.data1.splice(0,1)
  },
 
 
