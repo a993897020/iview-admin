@@ -340,6 +340,7 @@ export default {
   },
   mounted(){
 	  this.Setgoods();
+    this.data1.splice(0,1)
   },
   // watch:{
 	 //  '$route':'Setgoods'
