@@ -1,6 +1,6 @@
 <template>
 	<router-link to="/login">
-		<h1><Icon type="md-star" color=#2db7f5></Icon>Hello,Welcome to my website<Icon type="md-star" color=#2db7f5></Icon></h1>
+		<h1>Hello,Welcome to my website</h1>
 		
   <div class="bg"  >
   </div>
@@ -24,7 +24,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	.bg{
-		position: relative;
 		width: 100%;
 		height: 100%;
 		background:url(../assets/bg2.jpg);
@@ -41,8 +40,10 @@ export default {
 	}
 	h1{
 		position: fixed;
-		left: 25%;
+		left: 50%;
 		top: 5%;
+		width: 800px;
+		margin-left: -400px;
 		font-size: 50px;
 		z-index: 99;
 		font-family: "Helvetica Neue";
