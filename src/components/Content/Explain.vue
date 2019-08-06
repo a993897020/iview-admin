@@ -84,9 +84,9 @@
 			<card>
 			<content style="text-align: center; ">
 				<div id="said">
-				<p>node-axios-iview后台管理系统</p>
+				<p>vue-iview后台管理系统</p>
 				<p>这是个纯前端做出来的项目,做的很漫长</p>
-				<p>有增删改查，没服务器，数据将不会永远保存</p>
+				<p>有增删改查，没数据库，没服务器，数据将不会永远保存</p>
 				<p>第一次登陆的用户则成为管理员，可执行所有该网页的功能</p>
 				</div>
 			</content>
